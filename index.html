@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HäkelHerzen – liebevoll handgemachte Häkeltiere und Amigurumi aus Österreich.">
+  <title>HäkelHerzen | Handgemacht mit Liebe</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf8;
+      color: #59453f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(255,255,255,0.96);
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #f5e4e4;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 34px;
+      font-style: italic;
+      color: #5b4640;
+    }
+
+    .logo span {
+      color: #f59aad;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #59453f;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ef8fa5;
+    }
+
+    .hero {
+      min-height: 520px;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(255,248,245,0.98) 0%,
+          rgba(255,248,245,0.90) 35%,
+          rgba(255,248,245,0.20) 70%
+        ),
+        url("images/collection.jpg");
+
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 60px 8%;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: 58px;
+      font-weight: normal;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ef9bad;
+    }
+
+    .hero p {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f39caf;
+      color: white;
+      text-decoration: none;
+      padding: 15px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #eb839c;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 60px 20px 25px;
+    }
+
+    .intro h2 {
+      font-family: Georgia, serif;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      max-width: 700px;
+      margin: auto;
+      color: #806c66;
+    }
+
+    .categories {
+      max-width: 1100px;
+      margin: auto;
+      padding: 35px 20px 70px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    .category {
+      background: white;
+      padding: 30px 15px;
+      border-radius: 22px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(100,70,70,0.08);
+      transition: transform 0.2s;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin: auto auto 15px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+    }
+
+    .pink { background: #fde3e8; }
+    .blue { background: #dff3fa; }
+    .purple { background: #eee4f5; }
+    .green { background: #e3f1e5; }
+    .yellow { background: #fff1ce; }
+
+    .handmade {
+      background: #fde7ea;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    .handmade .heart {
+      font-size: 35px;
+      color: #ed8da3;
+    }
+
+    .handmade h2 {
+      font-family: Georgia, serif;
+      margin: 8px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: white;
+      color: #8b7771;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        width: 100%;
+        margin-top: 12px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .hero {
+        min-height: 480px;
+        padding: 45px 25px;
+        background-position: center;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .categories {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🧶 HäkelHerzen <span>♥</span></div>
+
+  <nav>
+    <a href="#start">Startseite</a>
+    <a href="#kollektionen">Kollektionen</a>
+    <a href="#ueber">Über mich</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+
+<section class="hero" id="start">
+
+  <div class="hero-text">
+    <h1>
+      Kleine Freunde,<br>
+      große Freude <span>♡</span>
+    </h1>
+
+    <p>
+      Jedes Stück ist liebevoll von Hand gehäkelt –
+      einzigartig, kuschelig und mit ganz viel Herz.
+    </p>
+
+    <a class="button" href="#kollektionen">
+      ♥ Entdecke die Kollektionen
+    </a>
+  </div>
+
+</section>
+
+
+<section class="intro" id="kollektionen">
+  <h2>Meine Häkelwelt</h2>
+
+  <p>
+    Entdecke meine handgemachten kleinen Freunde.
+    Jede Figur entsteht Stück für Stück mit viel Liebe
+    und Kreativität.
+  </p>
+</section>
+
+
+<section class="categories">
+
+  <div class="category">
+    <div class="icon pink">🐻</div>
+    <h3>Tiere</h3>
+  </div>
+
+  <div class="category">
+    <div class="icon blue">🐳</div>
+    <h3>Meereswelt</h3>
+  </div>
+
+  <div class="category">
+    <div class="icon purple">🧁</div>
+    <h3>Süße Freunde</h3>
+  </div>
+
+  <div class="category">
+    <div class="icon green">🐰</div>
+    <h3>Mini Freunde</h3>
+  </div>
+
+  <div class="category">
+    <div class="icon yellow">⭐</div>
+    <h3>Andere</h3>
+  </div>
+
+</section>
+
+
+<section class="handmade" id="ueber">
+
+  <div class="heart">♥</div>
+
+  <h2>100 % handgemacht</h2>
+
+  <p>
+    Mit Liebe und Freude in Österreich gehäkelt.
+  </p>
+
+</section>
+
+
+<section class="intro" id="galerie">
+  <h2>Galerie</h2>
+  <p>
+    Hier entsteht nach und nach die Galerie meiner
+    bisherigen Häkelarbeiten. ♡
+  </p>
+</section>
+
+
+<section class="intro" id="kontakt">
+  <h2>Kontakt</h2>
+  <p>
+    Du möchtest mehr über HäkelHerzen erfahren?
+    Meine Kontaktmöglichkeiten folgen hier in Kürze.
+  </p>
+</section>
+
+
+<footer>
+  © 2026 HäkelHerzen · Handgemacht mit Liebe ♥
+</footer>
+
+</body>
+</html>
