@@ -579,5 +579,32 @@ Schreib mir gerne – ich freue mich auf deine Nachricht. ♡
   © 2026 HäkelHerzen · Handgemacht mit Liebe ♥
 </footer>
 
+
+<!-- Bilder vergrößern -->
+<div id="lightbox" onclick="this.style.display='none'"
+     style="display:none; position:fixed; inset:0;
+     background:rgba(0,0,0,0.9); z-index:9999;
+     justify-content:center; align-items:center;
+     padding:20px; box-sizing:border-box; cursor:zoom-out;">
+
+  <span style="position:absolute; top:15px; right:25px;
+               color:white; font-size:40px;">&times;</span>
+
+  <img id="lightbox-img"
+       alt="Vergrößerte Ansicht"
+       style="max-width:100%; max-height:90vh;
+              object-fit:contain; border-radius:12px;">
+</div>
+
+<script>
+document.querySelectorAll('section img').forEach(function(img) {
+  img.style.cursor = 'zoom-in';
+
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = this.src;
+    document.getElementById('lightbox').style.display = 'flex';
+  });
+});
+</script>
 </body>
 </html>
