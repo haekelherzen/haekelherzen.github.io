@@ -8,23 +8,27 @@
 
  <style>
 body {
-    background-image: url("images/HaekelHerzen-Hintergrund.png") !important;
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-#kollektionen {
-    background: rgba(255, 250, 248, 0.72);
-    border-radius: 24px;
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 30px;
+    background: #fffaf8;
 }
 
-/* Einheitliche Tierkarten */
-#tiere > div > div {
-  
+#kollektionen {
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 248, 0.40),
+            rgba(255, 250, 248, 0.40)
+        ),
+        url("images/HaekelHerzen-Hintergrund.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 24px;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 50px 40px;
+}
+
 /* Einheitliche Tierkarten */
 #tiere > div > div {
     height: 410px;
